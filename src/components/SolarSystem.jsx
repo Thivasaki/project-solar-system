@@ -10,8 +10,21 @@ class SolarSystem extends React.Component {
     ));
     return (
       <div data-testid="solar-system">
-        <Title headline="Planetas" />
-        {funct}
+        <Title className="title" headline="Planetas" />
+        <div className="solarSystemCards">
+          {funct}
+        </div>
+        <Title className="title" headline="Comparação (Escala aproximada da real)" />
+        <div className="solarSystemPlanetsDisplay">
+          <div className="Mercúrio">{}</div>
+          <div className="Vênus">{}</div>
+          <div className="Terra">{}</div>
+          <div className="Marte">{}</div>
+          <div className="Júpiter">{}</div>
+          <div className="Saturno">{}</div>
+          <div className="Urano">{}</div>
+          <div className="Netuno">{}</div>
+        </div>
       </div>
     );
   }

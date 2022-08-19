@@ -1,3 +1,119 @@
-.App {
+body {
   text-align: center;
+  background: url(http://artem.anmedio.ru/dev/planet/space.jpg);
+  color: white;
+  font-family: sans-serif;
+  margin: 0%;
+}
+
+.solarSystemCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.planetImg {
+  height: 200px;
+  padding: 30px;
+}
+
+.solarSystemPlanetsDisplay {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Mercúrio {
+  animation: translateBackground 200s infinite linear; 
+  background:url(https://www.solarsystemscope.com/textures/download/2k_mercury.jpg) center repeat-x;
+  border-radius:50%;
+  width: 100px;
+  height: 100px;
+}
+
+.Vênus {
+  animation: translateBackground 500s infinite linear; 
+  background:url(https://www.solarsystemscope.com/textures/download/2k_venus_surface.jpg) center repeat-x;
+  border-radius:50%;
+  width: 280px;
+  height: 280px;
+}
+
+.Terra {
+  animation: translateBackground 10s infinite linear; 
+  background:url(https://web.cortland.edu/flteach/civ/davidweb/images/fullmapb.jpg) repeat-x;
+  border-radius:50%;
+  width: 280px;
+  height: 280px;
+}
+
+.Marte {
+  animation: translateBackground 11s infinite linear; 
+  background:url(http://artem.anmedio.ru/dev/planet/mars.jpg) center repeat-x;
+  border-radius:50%;
+  width: 240px;
+  height: 240px;
+}
+
+.Júpiter {
+  animation: translateBackground 1s infinite linear; 
+  background:url(https://www.solarsystemscope.com/textures/download/2k_jupiter.jpg) center repeat-x;
+  border-radius:50%;
+  width: 770px;
+  height: 770px;
+}
+
+.Saturno {
+  animation: translateBackground 2s infinite linear; 
+  background:url(https://www.solarsystemscope.com/textures/download/2k_saturn.jpg) repeat-x;
+  border-radius:50%;
+  width: 700px;
+  height: 700px;
+}
+
+.Urano {
+  animation: translateBackground 7s infinite linear; 
+  background:url(https://www.solarsystemscope.com/textures/download/2k_uranus.jpg) repeat-x;
+  border-radius:50%;
+  width: 370px;
+  height: 370px;
+}
+
+.Netuno {
+  animation: translateBackground 8s infinite linear; 
+  background:url(https://www.solarsystemscope.com/textures/download/2k_neptune.jpg) repeat-x;
+  border-radius:50%;
+  width: 370px;
+  height: 370px;
+}
+
+.Mission {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.MissionCard {
+  padding: 20px 0px 20px 0px;
+  width: 20%;
+  margin: 50px;
+  border: solid 1px;
+  border-radius: 10%;
+}
+
+.missCardTitle {
+  padding-bottom: 20px;
+  border-bottom: solid 1px;
+}
+
+@keyframes translateBackground{
+  0%{
+    background-position-x:100%;
+  }
+  100%{
+    background-position-x:-80%;
+  }
 }
